@@ -1,0 +1,5 @@
+train<- read.csv("pisa2009train.csv")
+test <- read.csv("pisa2009test.csv")
+nrow(train)
+summary(train)
+tapply(train$readingScore, train$male, mean)
